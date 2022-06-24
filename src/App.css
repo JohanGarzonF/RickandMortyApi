@@ -55,7 +55,7 @@ ul {
 .App {
   width: 100%;
   min-height: 100vh;
-  padding-bottom: 80px;
+  padding-bottom: 0px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -116,6 +116,47 @@ ul {
 }
 .location_info span {
   color: #78bf05;
+}
+/* <====================== Pagination container ======================> */
+.pagination-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pagination-number-container {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+.pagination-prev-next {
+  background-color: #78bf05;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2px;
+  width: 25px;
+  height: 100%;
+  border-radius: 5px;
+  border: none;
+}
+.page-number {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 25px;
+  aspect-ratio: 1;
+  border-radius: 5px;
+}
+.page-active {
+  background-color: #78bf05;
+}
+.pagination-end {
+  padding-bottom: 80px;
 }
 /* <====================== card container ======================> */
 .card_container {
