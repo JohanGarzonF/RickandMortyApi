@@ -3,7 +3,11 @@ const InputSearch = ({setGetId}) => {
 
   const searchLocation = e => {
     e.preventDefault()
-    setGetId(e.target.firstChild.value)
+    if(e.target.firstChild.value < 1 || e.target.firstChild.value > 126){
+      setGetId(e.target.firstChild.value = 1)
+    } else {
+      setGetId(e.target.firstChild.value)
+    }
   }
 
   return (
